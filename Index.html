@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+
+    <!-- We load the 'Inter' font family for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- We link to our new external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+      STRUCTURAL ELEMENT: Header & Navigation
+    -->
+    <header class="site-header">
+        <nav class="main-nav container">
+            <div class="logo">
+                My Portfolio
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+            </div>
+            <!-- Mobile Menu Button (non-functional in this demo) -->
+            <button class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+
+        <!-- Section 1: Hero / Home -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <!-- Image Placeholder: A generic avatar -->
+                <img src="https://placehold.co/128x128/2A9D8F/FFFFFF?text=ME" alt="Profile Picture" class="profile-pic">
+                <h1>Welcome! My name is Boyao Li</h1>
+                <p>A Current student in the Bachelor of Technology (Digital Health) program at Algonquin College. Below are some of the projects I've worked on.</p>
+                <a href="#projects" class="cta-button">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!--
+          Section 2: Projects
+        -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+
+                <div class="project-grid">
+
+                    <!-- RECURRING COMPONENT: Project Card -->
+                    <div class="project-card">
+                        <img src="budget_tracker.png" alt="Budget Tracker App Screenshot" class="project-image">
+
+                        <div class="project-content">
+                            <h3>Java Budget Tracker</h3>
+                            <p>
+                                A desktop application built with JavaFX to manage personal finances. Based on the provided code, this app uses OOP principles to handle transactions, manages a list of incomes/expenses, and includes data persistence by saving to/loading from CSV files.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag java">Java</span>
+                                <span class="tag javafx">JavaFX</span>
+                                <span class="tag junit">JUnit</span>
+                                <span class="tag oop">OOP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Project Card Component -->
+                    <!-- RECURRING COMPONENT: Project Card (Instance 2) -->
+                    <div class="project-card">
+                        <img src="Yatzy.png" alt="Yatzy Game Screenshot" class="project-image">
+
+                        <div class="project-content">
+                            <h3>Vanilla JS Yatzy Game</h3>
+                            <p>
+                                A web-based implementation of the classic dice game, Yatzy. This project, built with just HTML, CSS, and JavaScript (no frameworks), demonstrates strong frontend fundamentals including DOM manipulation, event handling, and game state management.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag js">JavaScript</span>
+                                <span class="tag html">HTML5</span>
+                                <span class="tag css">CSS3</span>
+                                <span class="tag dom">DOM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Project Card Component -->
+
+                </div>
+            </div>
+        </section>
+
+        <!--
+          Section 3: About & Techniques
+        -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <!-- About Me Column -->
+                <div class="about-me-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        Hi, I’m Boyao Li, a student in the Bachelor of Technology (Digital Health) program at Algonquin College. I’m passionate about the intersection of healthcare and technology, and I’m working toward building solutions that make digital health more accessible, efficient, and user-centered.
+                        Through my coursework and personal projects, I’ve gained experience in areas such as software development, health informatics, interface design, and data handling. My goal is to continue developing innovative tools that can support patients, healthcare professionals, and health systems in meaningful ways.
+                    </p>
+                    <p>
+                        My goal is to create software that is not only functional and efficient but also intuitive and enjoyable for the user.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--
+      STRUCTURAL ELEMENT: Footer
+    -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Boyao Li. All rights reserved.</p>
+            <p class="footer-note">Built with HTML & CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
